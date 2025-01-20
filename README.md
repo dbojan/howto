@@ -12,7 +12,7 @@ Various HOWTOs
 - to run type ./clear_windows_password.sh in terminal or,
 - right click on program and select open with, other, enter xterm, or mate-terminal or terminal. press ok.
 - follow the instructions. Reboot windows when finished.
-- there is also interenet browser librewolf, you can add copy it to usb if you wish
+- there is also interenet browser 'librewolf', you can add copy it to usb if you wish: https://sourceforge.net/projects/ikkiboot/files/porteus/extra/, more info here: https://forum.porteus.org/viewtopic.php?f=49&t=10461. chntpw is also downloaded from https://sourceforge.net/projects/ikkiboot/files/porteus/include/.
 
 ## How to change windows password from windows bootable usb.
 - downlod HBCD_PE_x64_v101.iso (1GB) from https://archive.hirensbootcd.org/pe-versions/, link example https://archive.hirensbootcd.org/pe-versions/HBCD_PE_x64_v101.iso
