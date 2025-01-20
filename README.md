@@ -18,5 +18,5 @@ Various HOWTOs
 ## How to change windows password from windows bootable usb.
 - downlod HBCD_PE_x64_v101.iso (1GB) from https://archive.hirensbootcd.org/pe-versions/, link example https://archive.hirensbootcd.org/pe-versions/HBCD_PE_x64_v101.iso
 - Create bootable usb from downloaded iso, using rufus, or ventoy.
-- in security find password remover, select user, clear password.
+- click on 'start' menu, security and find password remover, select user, clear password.
 
