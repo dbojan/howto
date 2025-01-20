@@ -12,3 +12,10 @@ Various HOWTOs
 - to run type ./clear_windows_password.sh in terminal or,
 - right click on program and select open with, other, enter xterm, or mate-terminal or terminal. press ok.
 - follow the instructions. Reboot windows when finished.
+- there is also interenet browser librewolf, you can add copy it to usb if you wish
+
+## How to change windows password from windows bootable usb.
+- downlod HBCD_PE_x64_v101.iso (1GB) from https://archive.hirensbootcd.org/pe-versions/, link example https://archive.hirensbootcd.org/pe-versions/HBCD_PE_x64_v101.iso
+- Create bootable usb from downloaded iso, using rufus, or ventoy.
+- in security find password remover, select user, clear password.
+
