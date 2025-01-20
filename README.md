@@ -20,3 +20,7 @@ Various HOWTOs
 - Create bootable usb from downloaded iso, using rufus, or ventoy.
 - click on 'start' menu, security and find password remover, select user, clear password.
 
+## How can I copy files between 2 ftp / webdav sites?
+- Open both sites in winscp program, use copy and paste
+- Or use 'map network drive' or 'add a network location', or create shortcut: explorer.exe ftp://...
+
