@@ -59,7 +59,7 @@ do
 		echo "*** 2. Press enter to edit auto selected user (whose number is written at the bottom), or type in number (RID) of the user you wish to edit. Example: 01f4 ***"
 		echo "*** 3. Press 1 - to 'Clear (blank) user password' ***"
 		echo "*** 4. Press q - to 'Quit editing user, back to user select' ***"
-		echo "*** 5. q - to 'Quit (you will be asked if there is something to save)' ***"
+		echo "*** 5. Press q - to 'Quit (you will be asked if there is something to save)' ***"
 		echo "*** 6. Press y - to 'Write files' ***"	
 		$prog -i $locationAndFile
 		echo "*** List of users, cleared password(s) should say *BLANK* in the 'Lock' column. Reboot if all is ok (Logout). ***"
