@@ -2,20 +2,39 @@
 Various HOWTOs
 
 ## How to change windows password from linux?
-- Windows partition must not be locked by bitlocker disk encryption
-- Download 'Porteus linux 64 bit Mate' from http://www.porteus.org. Example link download (size 470MB): https://ftp.nluug.nl/os/Linux/distr/porteus/x86_64/Porteus-v5.1/Porteus-MATE-v5.1-alpha-x86_64.iso
-- Create bootable usb from downloaded iso, using rufus, or ventoy.
-- Download [chntpw](https://github.com/dbojan/howto/raw/refs/heads/main/chntpw-140201.x86_64.xzm) (right click, 'save link as')
-- Download [clear_windows_password.sh](https://github.com/dbojan/howto/raw/refs/heads/main/clear_windows_password.sh).
-- Put these two files to 'porteus/modules' folder on usb. Create folders yourself.
-- Boot pc, select 'boot from usb' using f9, or f2 or esc key while booting.
-- Double click on 'Windows' partition to make it accessable from linux.
-- Double click on chntpw_xx.xzm in 'porteus\modules' folder to install, if not installed automatically.
-- To make 'clear_windows_password.sh' script executable (runable), type in terminal 'chmod u+x ./clear_windows_password.sh', or right click in file manager, and select in permissions 'allow executing as program'
-- To run type ./clear_windows_password.sh in terminal or,
-- Right click on program and select open with, other, enter xterm, or mate-terminal or terminal. press ok.
-- Follow the instructions. Reboot windows when finished. Instructions are also written inside .sh script, you can read it with notepad.
-- There is also interenet browser 'librewolf', you can add it to usb if you wish to 'porteus/modules' folder: https://sourceforge.net/projects/ikkiboot/files/porteus/extra/, more info here: https://forum.porteus.org/viewtopic.php?f=49&t=10461. chntpw is also downloaded from https://sourceforge.net/projects/ikkiboot/files/porteus/include/.
+ - This is a script to make clearing windows passwords from linux easier.
+ - Requires Porteus os, chntpw application, and windows partition must not be locked by bitlocker encryption.
+ - Porteus os web site: http://www.porteus.org
+ - You can find mirror of all needed files here: https://1drv.ms/f/c/d3221cfe195f835b/EpsMCSu8fJJCmywUxjhXNWABNh4cPEDBQiNOk43ChrmNJA?e=FlsK71
+ - (Original sources: 
+ - ('Porteus-v5.1/Porteus-LXDE-v5.1-alpha-x86_64.iso': https://ftp.nluug.nl/os/Linux/distr/porteus/x86_64/Porteus-v5.1/Porteus-LXDE-v5.1-alpha-x86_64.iso)
+ - ('chntpw-140201.x86_64.xzm', https://sourceforge.net/projects/ikkiboot/files/porteus/)
+ - ('change_windows_password.sh' https://github.com/dbojan/howto)
+
+ - If you use ventoy, copy 3 files to usb.
+ - If you use rufus, create bootable iso from Porteus iso, and copy additional files to usb.
+ - (If you copy files to porteus\modules folder, they should load automatically)
+
+ - root password is toor, guest password is guest.
+ - How to use, after booting pc from usb:
+
+ - To open file manager: click on white icon (File Manager) in top left corner
+ - (Windows partition should be auto-mounted. If not: click on 'Windows' icon on the left panel of file manager, to see windows files.)
+ - To install chntpw app: click on usb drive in left part of file manager, then on chntpw_xx.xzm, in the left panel of the file manager,
+ - Enter root password: toor
+ - To run the script: double click on 'change_windows_password.sh' and select 'Execute In Terminal'
+ - (If you wish to read 'change_windows_password.sh' in text editor, double click on it, and select 'Open'.)
+
+ -  You will be presented with the list of windows users. We will clear admin users' password, and write changes to disk.
+ -  What to do after running the script (make sure Numlock is on):
+
+ -  1. Press 1 followed by enter - to select 'Edit user data na passwords'
+ -  2. Press enter to edit auto selected 'admin' user (whose number is written at the bottom). Or type in number (RID) of the user you wish to edit. Example: 01f4
+ -  3. Press 1 - to 'Clear (blank) user password'
+ -  4. Press q - to 'Quit editing user, back to user select'
+ -  5. Press q - to 'Quit (you will be asked if there is something to save)'
+ -  6. Press y - to 'Write files'
+ -  List of users will be displayed, cleared password(s) should say *BLANK* in the 'Lock' column. Reboot if all is ok (Logout).
 
 ## How to change windows password from windows bootable usb.
 - Downlod HBCD_PE_x64_v101.iso (1GB) from https://archive.hirensbootcd.org/pe-versions/, link example https://archive.hirensbootcd.org/pe-versions/HBCD_PE_x64_v101.iso
