@@ -7,7 +7,7 @@ Various HOWTOs
  - Porteus os web site: http://www.porteus.org
  - You can find mirror of all needed files here: https://1drv.ms/f/c/d3221cfe195f835b/EpsMCSu8fJJCmywUxjhXNWABNh4cPEDBQiNOk43ChrmNJA?e=FlsK71
  - (Original sources: 
- - ('Porteus-v5.1/Porteus-LXDE-v5.1-alpha-x86_64.iso': https://ftp.nluug.nl/os/Linux/distr/porteus/x86_64/Porteus-v5.1/Porteus-LXDE-v5.1-alpha-x86_64.iso)
+ - ('Porteus-LXDE-v5.1-alpha-x86_64.iso': https://ftp.nluug.nl/os/Linux/distr/porteus/x86_64/Porteus-v5.1/Porteus-LXDE-v5.1-alpha-x86_64.iso)
  - ('chntpw-140201.x86_64.xzm', https://sourceforge.net/projects/ikkiboot/files/porteus/)
  - ('change_windows_password.sh' https://github.com/dbojan/howto)
 
