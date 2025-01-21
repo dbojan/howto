@@ -43,7 +43,7 @@ windowsPart='Windows/System32/config/SAM'
 
 if ! command -v $prog 2>&1 >/dev/null
 then
-    echo "$prog not installed, please double click on 'chntpw_xx.xzm' to install or, download package from proteus web site and install."
+    echo "$prog not installed, please double click on 'chntpw_xx.xzm' to install or, download package from porteus web site and install."
     exit 1
 fi
 
