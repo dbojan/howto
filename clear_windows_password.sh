@@ -9,7 +9,7 @@
 #('chntpw-140201.x86_64.xzm', https://sourceforge.net/projects/ikkiboot/files/porteus/)
 #('change_windows_password.sh' https://github.com/dbojan/howto)
 #
-#If you use ventoy, copy 3 files to usb. (if you get black screen try using "grub 2" option.
+#If you use ventoy, copy 3 files to usb. (if you get black screen, try using "grub 2" boot option.)
 #If you use rufus, create bootable iso from Porteus iso, and copy additional files to usb.
 #(If you copy files to porteus\modules folder, they should load automatically)
 #
