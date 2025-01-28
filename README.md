@@ -48,7 +48,8 @@ Various HOWTOs
 
 ## how to make windows 11 more like windows 10
 
-use this file. (right click, save file as). Moves start to left, disable top layout, uninstall new notepad, news ... For complete list of changes open file in notepad.
+- Download and run [this file](https://raw.githubusercontent.com/dbojan/howto/refs/heads/main/11_to_10.bat). (right click, save file as). You don't have to be an administrator. 
+- Moves start to left, disable: top layout, new context menu; uninstalls: new notepad, news ... For complete list of changes open file in notepad. v 2024-12-28-1.
 
 
 
