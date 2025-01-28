@@ -11,12 +11,15 @@ Various HOWTOs
  - ('chntpw-140201.x86_64.xzm', https://sourceforge.net/projects/ikkiboot/files/porteus/)
  - ('change_windows_password.sh' https://github.com/dbojan/howto)
 
+### Preparing usb
  - If you use ventoy, copy 3 files to usb.
+  - If you get black screen use "grub 2" loading option
  - If you use rufus, create bootable iso from Porteus iso, and copy additional files to usb.
  - (If you copy files to porteus\modules folder, they should load automatically)
 
  - root password is toor, guest password is guest.
- - How to use, after booting pc from usb:
+  
+### How to use, after booting pc from usb:
 
  - To open file manager: click on white icon (File Manager) in top left corner
  - (Windows partition should be auto-mounted. If not: click on 'Windows' icon on the left panel of file manager, to see windows files.)
@@ -49,7 +52,7 @@ Various HOWTOs
 ## how to make windows 11 more like windows 10
 
 - Download and run [this file](https://raw.githubusercontent.com/dbojan/howto/refs/heads/main/11_to_10.bat), (right click, save file as). You don't have to be an administrator. 
-- Moves start menu to left, disable: top layout, new context menu; uninstalls: new notepad, news ... For complete list of changes open file in notepad.
+- What it does: moves start menu to left, disable: top layout, new context menu; uninstalls: new notepad, news ... For complete list of changes open file in notepad.
 - 2024-12-28-1.
 
 
