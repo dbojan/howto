@@ -13,7 +13,7 @@ Various HOWTOs
 
 ### Preparing usb
  - If you use ventoy, copy 3 files to usb.
-  - If you get black screen use "grub 2" boot option
+ - If you get black screen, use "grub 2" boot option
  - If you use rufus, create bootable iso from Porteus iso, and copy additional files to usb.
  - (If you copy files to porteus\modules folder, they should load automatically)
  - root password is toor, guest password is guest.
