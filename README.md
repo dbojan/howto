@@ -46,3 +46,9 @@ Various HOWTOs
 - Open both sites in winscp program, use copy and paste
 - Or use 'map network drive' or 'add a network location', or create shortcut: explorer.exe ftp://...
 
+## how to make windows 11 more like windows 10
+
+use this file. (right click, save file as). Moves start to left, disable top layout, uninstall new notepad, news ... For complete list of changes open file in notepad.
+
+
+
