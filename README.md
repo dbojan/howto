@@ -5,7 +5,7 @@ Various HOWTOs
  - This is a script to make clearing windows passwords from linux easier.
  - Requires Porteus os, chntpw application and clear_windows_password.sh. Windows partition must not be locked by bitlocker encryption.
  - You can find mirror of all needed files here: https://mega.nz/folder/0GlnXBoI#Mhnuxlvb5zon7F_dqIyXnw
- - (Original sources: [Porteus linux](http://www.porteus.org), [iso file 470MB](https://ftp.nluug.nl/os/Linux/distr/porteus/x86_64/Porteus-v5.1/Porteus-LXDE-v5.1-alpha-x86_64.iso), [chntpw-140201.x86_64.xzm](https://sourceforge.net/projects/ikkiboot/files/porteus/include/), [change_windows_password.sh](https://raw.githubusercontent.com/dbojan/howto/refs/heads/main/clear_windows_password.sh))
+ - (Original sources: [Porteus linux](http://www.porteus.org), [iso file 470MB](https://ftp.nluug.nl/os/Linux/distr/porteus/x86_64/Porteus-v5.1/Porteus-LXDE-v5.1-alpha-x86_64.iso), [chntpw-140201.x86_64.xzm](https://sourceforge.net/projects/ikkiboot/files/porteus/include/chntpw-140201.x86_64.xzm), [change_windows_password.sh](https://raw.githubusercontent.com/dbojan/howto/refs/heads/main/clear_windows_password.sh) (use right click, save link as.)
 
 ### Preparing usb
  - If you use ventoy, copy 3 files to usb.
