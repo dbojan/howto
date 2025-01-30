@@ -35,7 +35,7 @@ Various HOWTOs
  -  List of users will be displayed, cleared password(s) should say *BLANK* in the 'Lock' column. Reboot if all is ok (Logout).
 
  -  (There is also a version with [Slitaz](https://slitaz.org) linux, [98MB files here](https://mega.nz/folder/oDERiDqB#Xhrn_bty20oiMEOzLEVZYw). root password is root.  
--Click on windows partition in the file manager to mount it.  
+-Select us/en keyboard/language. Click on windows partition in the file manager to mount it.  
 -Double click to install chntpw package, right click on 'clear_windows_password.sh' and select open with 'system apps\xterm'.)
 
 ## How to change windows password from windows bootable usb.
