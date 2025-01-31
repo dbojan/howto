@@ -1,7 +1,7 @@
 
 @echo off
 
-rem 2024-12-28-1
+rem 2024-12-31-1
 
 echo add 'This PC' (refresh desktop to activate) ...
 reg add HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel  /v "{20D04FE0-3AEA-1069-A2D8-08002B30309D}"  /t REG_DWORD  /d 0 /f
@@ -34,11 +34,11 @@ reg add "HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Ad
 echo remove new notepad and add shortcut to the old version to 'start menu' and to 'send to' ...
 powershell -command "Get-AppxPackage *Microsoft.WindowsNotepad* | Remove-AppxPackage"
 
-set "source=C:\Windows\System32\notepad.exe"
+set "source=%windir%\System32\notepad.exe"
 set "destination=%APPDATA%\Microsoft\Windows\Start Menu\Programs\notepad.lnk"
 powershell -c "$ws = New-Object -ComObject WScript.Shell; $s = $ws.CreateShortcut('%destination%'); $s.TargetPath = '%source%'; $s.Save()"
 
-set "source=C:\Windows\System32\notepad.exe"
+set "source=%windir%\System32\notepad.exe"
 set "destination=%APPDATA%\Microsoft\Windows\SendTo\notepad.lnk"
 powershell -c "$ws = New-Object -ComObject WScript.Shell; $s = $ws.CreateShortcut('%destination%'); $s.TargetPath = '%source%'; $s.Save()"
 
@@ -75,8 +75,17 @@ powershell -c "$ws = New-Object -ComObject WScript.Shell; $s = $ws.CreateShortcu
 echo remove news ... (might take some time)
 powershell -c "Get-AppxPackage  *WebExperience* | Remove-AppxPackage"
 
+rem for all users?:
+rem powershell -c "Get-AppxPackage -allusers *WebExperience* | Remove-AppxPackage"
+
+rem faster to user powershell? and no ask to agree to contract
+rem winget uninstall "Windows web experience Pack"
+
 echo complete.
 pause
 
 exit /b
 
+rem https://www.tenforums.com/tutorials/3123-clsid-key-guid-shortcuts-list-windows-10-a.html
+rem https://www.tenforums.com/tutorials/6942-add-remove-default-desktop-icons-windows-10-a.html
+rem https://www.tenforums.com/tutorials/178178-how-enable-disable-news-interests-taskbar-windows-10-a.html#option2
