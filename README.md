@@ -54,5 +54,8 @@ Various HOWTOs
 - What it does: move start menu to left, disable: top layout, new context menu; uninstall: new notepad, news ... For a complete list of changes open the file in notepad.
 - 2024-12-28-1.
 
+## Slitaz uefi
+- [slitaz-current-core64.iso](https://mirror1.slitaz.org/iso/current/slitaz-current-core64.iso)
+
 
 
