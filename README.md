@@ -39,7 +39,7 @@ Various HOWTOs
 -Double click to install chntpw package, right click on 'clear_windows_password.sh' and select open with 'system apps\xterm'.)
 
 ## How to change windows password from windows bootable usb.
-- Downlod HBCD_PE_x64_v101.iso (1GB) from https://archive.hirensbootcd.org/pe-versions/, link example https://archive.hirensbootcd.org/pe-versions/HBCD_PE_x64_v101.iso
+- Downlod older version of [Hiren's boot cd](https://www.hirensbootcd.org/) (cause it is smaller): [HBCD_PE_x64_v101.iso (1GB)](https://archive.hirensbootcd.org/pe-versions/HBCD_PE_x64_v101.iso)
 - Create bootable usb from downloaded iso, using rufus, or ventoy.
 - Boot pc, select 'boot from usb' using f9, or f2 or esc key while booting.
 - Click on 'start' menu, security and find password remover, select user, clear password.
@@ -48,7 +48,7 @@ Various HOWTOs
 - Open both sites in winscp program, use copy and paste
 - Or use 'map network drive' or 'add a network location', or create shortcut: explorer.exe ftp://...
 
-## how to make windows 11 more like windows 10
+## How to make windows 11 more like windows 10
 
 - Download and run [this file](https://raw.githubusercontent.com/dbojan/howto/refs/heads/main/11_to_10.bat), (right click, save file as). You don't have to be an administrator. 
 - What it does: move start menu to left, disable: top layout, new context menu; uninstall: new notepad, news ... For a complete list of changes open the file in notepad.
