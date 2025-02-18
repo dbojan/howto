@@ -57,5 +57,7 @@ Various HOWTOs
 ## Slitaz uefi
 - [slitaz-current-core64.iso](https://mirror1.slitaz.org/iso/current/slitaz-current-core64.iso)
 
+## How to make portable versions of windows programs
+- https://github.com/dbojan/howto/blob/main/portable.md
 
 
