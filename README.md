@@ -60,4 +60,19 @@ Various HOWTOs
 ## How to make portable versions of windows programs
 - https://github.com/dbojan/howto/blob/main/portable.md
 
+## How to create fillable pdf forms for free:
+
+-Use Libre office.
+-Start Libre office Draw
+-View/Toolbars/Form Controls
+
+-Click on 'Design Mode', looks like a triangle.
+-If 'Form control wizard' is on, turn it off
+-You can add regular text, text box, check box, radio button ...
+-Select export to pdf, enable 'pdf form' option.
+-You can edit 'Tab Order' by right click and select 'Control Options'
+
+
+
+
 
