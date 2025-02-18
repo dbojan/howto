@@ -1,3 +1,4 @@
+
 <body>
  <h1 id="toc1">How to make portable versions of apps on windows</h1>
  <h2 id="toc2">Note:</h2>
@@ -21,4 +22,8 @@
 <p>In the installation folder of LO, change content of file program\bootstrap.ini<br>from<br>UserInstallation=$SYSUSERCONFIG/LibreOffice/4<br>to<br>UserInstallation=$ORIGIN/../settings1</p>
 <p>Create shortcut to program\soffice.exe if you wish.</p>
  <h3 id="toc9"><a href="https://github.com/clsid2/mpc-hc">MPC-HC by clsid2</a></h3>
-<p>- to make it portable: view/options/player: store settings in ini file</p></body>
+<p>- to make it portable: view/options/player: store settings in ini file</p>
+ <h3 id="toc10">Softmaker Free Office: https://www.freeoffice.com/en/</h3>
+<p>(Untested)</p>
+<p>-copy the install folder and “Documents/SoftMaker” to SoftMaker Office 2024 folder on USB flash drive. <br>-create a file named portable.txt in the SoftMaker Office 2024 folder<br>-This “marker file” causes SoftMaker Office not to install itself in the Windows Registry or the Start menu.</p>
+<p>from: https://www.softmaker.com/en/support/installation/windows and https://alternative2office.org/office-suite/how-to-install-and-run-softmaker-office-2024-applications-from-a-usb-flash-drive/</p></body>
