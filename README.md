@@ -74,6 +74,7 @@ Various HOWTOs
 - You can edit 'Tab Order' by right click and select 'Control Options'
 
 ### With Softmaker Free Office: https://www.freeoffice.com/en/
+- Start TextMaker
 - Add textbox, or table to text.
 - Export to pdf, enable 'Create interactive form'
 - No way to add checkboxes?
