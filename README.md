@@ -62,8 +62,9 @@ Various HOWTOs
 
 ## How to create fillable pdf forms for free:
 
-- Use Libre office.
-- Start Libre office Draw
+### With Libre Office.
+
+- Start Libre office Draw if you want to manually position text boxes, or Libre Office Writer (text boxes will be in text lines)
 - View/Toolbars/Form Controls
 
 - Click on 'Design Mode', looks like a triangle.
@@ -71,6 +72,11 @@ Various HOWTOs
 - You can add regular text, text box, check box, radio button ...
 - Select export to pdf, enable 'pdf form' option.
 - You can edit 'Tab Order' by right click and select 'Control Options'
+
+### With Softmaker Free Office: https://www.freeoffice.com/en/
+-Add textbox, or table to text.
+-Export to pdf, enable 'Create interactive form'
+-No way to add checkboxes?
 
 
 
