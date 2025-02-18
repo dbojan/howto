@@ -19,4 +19,6 @@
 <p>uncompress archive<br>create folder 'portable' in uncompressed folder<br>run vlc.<br>it  will use 'portable' folder for settings</p>
  <h3 id="toc8">Libre Office</h3>
 <p>In the installation folder of LO, change content of file program\bootstrap.ini<br>from<br>UserInstallation=$SYSUSERCONFIG/LibreOffice/4<br>to<br>UserInstallation=$ORIGIN/../settings1</p>
-<p>Create shortcut to program\soffice.exe if you wish.</p></body>
+<p>Create shortcut to program\soffice.exe if you wish.</p>
+ <h3 id="toc9"><a href="https://github.com/clsid2/mpc-hc">MPC-HC by clsid2</a></h3>
+<p>- to make it portable: options/player: store settings in ini file</p></body>
