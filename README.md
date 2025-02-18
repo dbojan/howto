@@ -64,7 +64,7 @@ Various HOWTOs
 
 ### With Libre Office.
 
-- Start Libre office Draw if you want to manually position text boxes, or Libre Office Writer (text boxes will be in text lines)
+- Start Libre office Draw if you want to manually position text boxes, or Libre Office Writer (text boxes will be inline)
 - View/Toolbars/Form Controls
 
 - Click on 'Design Mode', looks like a triangle.
