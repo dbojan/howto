@@ -1,10 +1,3 @@
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<style>h1,h2,h3,h4 {text-align: center}</style>
-<style>p {text-align: justify}</style>
-<style>img {max-width: 1080}</style>
-<style>img {display: block; margin-left: auto; margin-right: auto}</style>
-</head>
 <body>
  <h1 id="toc1">How to make portable versions of apps on windows</h1>
  <h2 id="toc2">Note:</h2>
