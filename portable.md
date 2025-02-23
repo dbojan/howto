@@ -1,5 +1,3 @@
-
-<body>
  <h1 id="toc1">How to make portable versions of apps on windows</h1>
  <h2 id="toc2">Note:</h2>
 <p>most of the downloaded installations (setup.exe) can be unpacked using 7-zip program. (7-zip.org)<br>After that find 'name of the program.exe', right click on it, select copy. In windows explorer right click on empty space, select 'paste shortcut'<br>Right click on created shortcut and select properties.</p>
@@ -24,6 +22,9 @@
  <h3 id="toc9"><a href="https://github.com/clsid2/mpc-hc">MPC-HC by clsid2</a></h3>
 <p>- to make it portable: view/options/player: store settings in ini file</p>
  <h3 id="toc10">Softmaker Free Office: https://www.freeoffice.com/en/</h3>
-<p>(Untested)</p>
-<p>-copy the install folder and “Documents/SoftMaker” to SoftMaker Office 2024 folder on USB flash drive. <br>-create a file named portable.txt in the SoftMaker Office 2024 folder<br>-This “marker file” causes SoftMaker Office not to install itself in the Windows Registry or the Start menu.</p>
+<p>either use usbstick.exe, or:</p>
+<p>-copy the folder where you installed "SoftMaker FreeOffice" to USB flash drive (example: "g:\SoftMaker Office 2024")<br>-optional: copy files from "Documents/SoftMaker" to "SoftMaker Office 2024" folder on USB flash drive. (example: "g:\SoftMaker Office 2024\SoftMaker")<br>-create a file named portable.txt in the "SoftMaker Office 2024" folder (example "g:\SoftMaker Office 2024\portable.txt")<br>-This “marker file” causes SoftMaker Office not to install itself in the Windows Registry or the Start menu.</p>
+<p>-you can move SoftMakerUpdaterTool.exe, syspin(64).exe, *.dwr (but keep *.iwr, and uk.dwr), *.rtf, *.pdf, *.nfo files to del folder (just create one)<br>-you can also move 'inst', 'spell' and 'tb' folders to del folder, although you might need them later.<br>-inst will be recreated.</p>
+<p>-start textmaker or planmaker or presentations .exe<br>-click on cancel when asked for name.<br>-go to file/options/files, and set default file format to docx (or odt).</p>
+<p>-to set a4 as default size, open textmaker, change page size to a4, and save as docx or tmv template (you can use any name you like, for example a4.dotx, or a4.tmv)<br>-move file to softmaker/templates.<br>-in textmaker, click on new, templates folder, click on your file, and select 'set as default' on the right.</p>
 <p>from: https://www.softmaker.com/en/support/installation/windows and https://alternative2office.org/office-suite/how-to-install-and-run-softmaker-office-2024-applications-from-a-usb-flash-drive/</p></body>
