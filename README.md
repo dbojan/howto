@@ -77,6 +77,87 @@ Various HOWTOs
 - Start TextMaker
 - Add textbox, or table to text.
 - Export to pdf, enable 'Create interactive form'
+
+## How to install printer using lpd/lpr protocol - windows cannot connect to shared printer 
+
+ON SERVER PC (machine where canon printer is connected by usb):
+
+install canon printer driver on server\
+(if ms ipp driver is already installed, select add driver/have
+disk/navigate to canon driver .inf file\
+ms ipp drivers have trouble connecting to printer after a while, or it
+stops working.\
+in windows 11 you cannot share canon printer, client says: cannot add
+printer, when you enter \\\\servername\\printer)
+
+start/run appwiz.cpl\
+turn windows features off or on\
+print and documents settings\
+enable \'lpd print service\'\
+enable \'lpr port monitor\'\
+(on windows 11, search \'windows features\' in start screen, select
+\'turn windows features off or on\')
+
+example:\
+machine name: bl7-test15\
+printer name: canon lbp251
+
+ON CLIENT PC (you connect from this pc to \'server pc\'):\
+start/run appwiz.cpl\
+turn windows features off or on\
+print and documents settings\
+enable \'lpd print service\' (optional)\
+enable \'lpr port monitor\' (must be installed)\
+(on windows 11, search \'windows features\' in start screen, select
+\'turn windows features off or on\')
+
+control panel/add printer\
+add device\
+add device manually\
+add a local printer or netwok printer\
+next\
+create new port\
+select type of port: LPR port\
+(if you don\'t see \'lpr\' port amongst offered, try restarting windows
+few times or updating windows.)\
+add lpr compatible printer:\
+name or address of server providing lpd: bl7-test15\
+name of printer or print queue of that server: canon lbp251-client (can
+be anything, really)\
+next\
+find printer driver .inf file if not already installed.
+
+Note:\
+\'enable bidirectional support\' should be enabled? untested, probably
+on by default\
+lpr type should also show if you select add port on \'printer server\'
+bottom of \'printers & bluetooth\' screen on win 11\
+if you have added name:lpr_port before, just select it in the previous
+screen, also windows will complain port already exists.
+
+\--\
+### Other way, untested, save the following lines as file fixprinter.reg:
+
+Windows Registry Editor Version 5.00
+
+\[HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows
+NT\\Printers\\RPC\]
+
+\"RpcUseNamedPipeProtocol\"=dword:00000001
+
+\"RpcProtocols\"=dword:00000007
+
+\"ForceKerberosForRpc\"=dword:00000001
+
+\[HKEY_LOCAL_MACHINE\\System\\CurrentControlSet\\Control\\Print\]
+
+\"RpcAuthnLevelPrivacyEnabled\"=dword:00000000
+
+\--\
+### Microsoft is talking about removing support for lpd protocol from Windows Server OS.\
+You can try using \'standard tcp port\' instead of lpr, but there are
+numerous reports of ip port being replaced with wsd.\
+In that case you should remove wsd support from printer.
 - No way to add checkboxes?
 
 
