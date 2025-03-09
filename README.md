@@ -86,7 +86,10 @@ Various HOWTOs
  <h3 id="toc3">ON CLIENT PC (you connect from this pc to 'server pc'):</h3>
 <p><b>install lpd printer service, and lpr port monitor:</b><br> - start/run appwiz.cpl<br> - turn windows features off or on<br> - print and documents settings<br> - enable 'lpd print service' (optional)<br> - enable 'lpr port monitor' (must be installed)<br> - (on windows 11, search 'windows features' in start screen, select 'turn windows features off or on')</p>
 <p><b>connect to server printer:</b><br> - control panel/add printer<br> - add device<br> - add device manually<br> - add a local printer or netwok printer<br> - next<br> - create new port<br> - select type of port: LPR port<br> - (if you don't see 'lpr' port amongst offered, try restarting windows few times or updating windows.)<br> - add lpr compatible printer:<br> - name or address of server providing lpd: bl7-test15<br> - name of printer or print queue of that server: canon lbp251-client (can be anything, really)<br> - next<br> - find printer driver .inf file if not already installed.</p>
-<p>Note:<br>- 'enable bidirectional support' should be enabled? untested, probably on by default<br>- lpr type should also show if you select add port on 'printer server' bottom of 'printers & bluetooth' screen on windows 11<br>- if you have added 'name:lpr_port' before, just select it in the previous screen, also windows will complain port already exists.</p>
+<p>Note:<br>- 'enable bidirectional support' should be enabled? untested, probably on by default<br>- lpr type should also show if you select add port on 'printer server' bottom of 'printers & bluetooth' screen on windows 11<br>- if you have added 'name:lpr_port' before, just select it in the previous screen, also windows will complain port already exists.
+<br>
+- if you get error changing printer driver on server, disable 'share this printer' in share settings, then enable it later, after changing driver.
+</p>
 <p><hr></p>
  <h3 id="toc4">Other way, untested, save the following lines as file fixprinter.reg:</h3>
 <p>Windows Registry Editor Version 5.00</p>
