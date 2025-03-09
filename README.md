@@ -97,7 +97,8 @@ Various HOWTOs
 <p>[HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Print]<br>"RpcAuthnLevelPrivacyEnabled"=dword:00000000 </p>
 <p><hr></p>
  <h3 id="toc5">Microsoft is talking about removing support for lpd protocol from Windows Server OS.</h3>
-<p>-You can try using 'standard tcp port' instead of lpr, but there are numerous reports of ip port being replaced with wsd by windows, probably related to 'let windows manage my printer', or windows updating printer driver itself.<br>-In that case you should remove wsd support from printer, or stop windows updating driver automatically.</p>
+<p>- You can try using 'standard tcp port' instead of lpr, but there are numerous reports of ip port being replaced with wsd by windows, probably related to 'let windows manage my printer', or windows updating printer driver itself.<br>- In that case you should remove wsd support from printer, or stop windows updating driver automatically.<br>
+- Reg file might get overwritten by group policies</p>
 
 
 
