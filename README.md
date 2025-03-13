@@ -49,9 +49,9 @@ Various HOWTOs
 - Or use 'map network drive' or 'add a network location', or create shortcut: explorer.exe ftp://...
 
 ## How to disable Libre Office logo
--edit programs/soffice.ini
--set logo to 0:
-Logo=0
+-edit programs/soffice.ini  
+-set logo to 0:  
+Logo=0  
 
 ## How to make windows 11 more like windows 10
 
