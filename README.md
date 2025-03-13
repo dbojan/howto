@@ -53,6 +53,10 @@ Various HOWTOs
 -set Logo to 0:  
 Logo=0  
 
+## How to make Libre Office start faster
+-go to options and disable unneeded options like java, spell checker etc.  
+-you can also disable printer/paper settins when loading documents, but that would not be recommended.
+
 ## How to make windows 11 more like windows 10
 
 - Download and run [this file](https://raw.githubusercontent.com/dbojan/howto/refs/heads/main/11_to_10.bat), (right click, save file as). You don't have to be an administrator. 
