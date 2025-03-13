@@ -50,7 +50,7 @@ Various HOWTOs
 
 ## How to disable Libre Office logo
 -edit programs/soffice.ini  
--set logo to 0:  
+-set Logo to 0:  
 Logo=0  
 
 ## How to make windows 11 more like windows 10
