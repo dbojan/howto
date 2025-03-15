@@ -47,20 +47,19 @@ Various HOWTOs
 ## How can I copy files between 2 ftp / webdav sites?
 - Open both sites in winscp program, use copy and paste
 - Or use 'map network drive' or 'add a network location', or create shortcut: explorer.exe ftp://...
-- Tested on MX Linux-xfce, with Thunar file manager, works fine
+- Tested on MX Linux-xfce, with Thunar file manager, works fine. Use sftp://somesite.com for scp protocol.
 - Tested on windows, works sort of, only with winscp, but uses temporary folder.
+
+## How to make Libre Office start faster
+-go to options and disable unneeded options like java, spell checker etc.  
+-you can also disable printer/paper settins when loading documents, but that would not be recommended.
 
 ## How to disable Libre Office logo
 -edit programs/soffice.ini  
 -set Logo to 0:  
 Logo=0  
 
-## How to make Libre Office start faster
--go to options and disable unneeded options like java, spell checker etc.  
--you can also disable printer/paper settins when loading documents, but that would not be recommended.
-
 ## How to make windows 11 more like windows 10
-
 - Download and run [this file](https://raw.githubusercontent.com/dbojan/howto/refs/heads/main/11_to_10.bat), (right click, save file as). You don't have to be an administrator. 
 - What it does: move start menu to left, disable: top layout, new context menu; uninstall: new notepad, news ... For a complete list of changes open the file in notepad.
 - 2024-12-28-1.
