@@ -47,6 +47,8 @@ Various HOWTOs
 ## How can I copy files between 2 ftp / webdav sites?
 - Open both sites in winscp program, use copy and paste
 - Or use 'map network drive' or 'add a network location', or create shortcut: explorer.exe ftp://...
+- Tested on MX Linux-xfce, with Thunar file manager, works fine
+- Tested on windows, works sort of, only with winscp, but uses temporary folder.
 
 ## How to disable Libre Office logo
 -edit programs/soffice.ini  
@@ -87,28 +89,85 @@ Logo=0
 - Add textbox, or table to text.
 - Export to pdf, enable 'Create interactive form'
 
- <h2 id="toc1">windows cannot connect to printer shared - how to install shared printer using lpd-lpr protocol</h2>
- <h3 id="toc2">ON SERVER PC (machine where canon printer is connected by usb):</h3>
-<p><b>install canon printer driver on server:</b><br> - (if ms ipp driver is already installed, select add driver/have disk/navigate to canon driver .inf file<br> - ms ipp drivers have trouble connecting to printer after a while, or it stops working.<br> - in windows 11 you cannot share canon printer using canon driver, client says: cannot connect to printer, when you enter \\servername\printer)</p>
-<p><b>install lpd printer service, and lpr port monitor:</b><br> - start/run appwiz.cpl<br> - turn windows features off or on<br> - print and documents settings<br> - enable 'lpd print service'<br> - enable 'lpr port monitor'<br> - (on windows 11, search 'windows features' in start screen, select 'turn windows features off or on')</p>
-<p>example:<br>machine name: bl7-test15<br>printer name: canon lbp251</p>
- <h3 id="toc3">ON CLIENT PC (you connect from this pc to 'server pc'):</h3>
-<p><b>install lpd printer service, and lpr port monitor:</b><br> - start/run appwiz.cpl<br> - turn windows features off or on<br> - print and documents settings<br> - enable 'lpd print service' (optional)<br> - enable 'lpr port monitor' (must be installed)<br> - (on windows 11, search 'windows features' in start screen, select 'turn windows features off or on')</p>
-<p><b>connect to server printer:</b><br> - control panel/add printer<br> - add device<br> - add device manually<br> - add a local printer or netwok printer<br> - next<br> - create new port<br> - select type of port: LPR port<br> - (if you don't see 'lpr' port amongst offered, try restarting windows few times or updating windows.)<br> - add lpr compatible printer:<br> - name or address of server providing lpd: bl7-test15<br> - name of printer or print queue of that server: canon lbp251-client (can be anything, really)<br> - next<br> - find printer driver .inf file if not already installed.</p>
-<p>Note:<br>- 'enable bidirectional support' should be enabled? untested, probably on by default<br>- lpr type should also show if you select add port on 'printer server' bottom of 'printers & bluetooth' screen on windows 11<br>- if you have added 'name:lpr_port' before, just select it in the previous screen, also windows will complain port already exists.
-<br>
-- if you get error changing printer driver on server, disable 'share this printer' in share settings, then enable it later, after changing driver.
-</p>
-<p><hr></p>
- <h3 id="toc4">Other way, untested, save the following lines as file fixprinter.reg:</h3>
-<p>Windows Registry Editor Version 5.00</p>
-<p>[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows NT\Printers\RPC]<br>"RpcUseNamedPipeProtocol"=dword:00000001<br>"RpcProtocols"=dword:00000007<br>"ForceKerberosForRpc"=dword:00000001</p>
-<p>[HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Print]<br>"RpcAuthnLevelPrivacyEnabled"=dword:00000000 </p>
-<p><hr></p>
- <h3 id="toc5">Microsoft is talking about removing support for lpd protocol from Windows Server OS.</h3>
-<p>- You can try using 'standard tcp port' instead of lpr, but there are numerous reports of ip port being replaced with wsd by windows, probably related to 'let windows manage my printer', or windows updating printer driver itself.<br>- In that case you should remove wsd support from printer, or stop windows updating driver automatically.<br>
-- Reg file might get overwritten by group policies</p>
+## windows cannot connect to printer shared - how to install shared printer using lpd-lpr protocol
 
+- if you cannot share printer on windows 10/11 with error message: "windows cannot connect to printer"
+- you can use lpd/lpr printer protocol to share printers.
+
+### ON SERVER PC (machine where canon printer is connected by usb):
+
+**install canon printer driver on server:**  
+\- (if ms ipp driver is already installed, select add driver/have disk/navigate to canon driver .inf file  
+\- if you get error changing printer driver on server, disable 'share this printer' in share settings, then enable it later, after changing driver.
+\- ms ipp drivers have trouble connecting to printer after a while, or it stops working.  
+\- in windows 11 you cannot share canon printer using canon driver, client says: cannot connect to printer, when you enter \\\\servername\\printer)
+
+**install lpd printer service, and lpr port monitor:**  
+\- start/run appwiz.cpl  
+\- turn windows features off or on  
+\- print and documents settings  
+\- enable 'lpd print service'  
+\- enable 'lpr port monitor'  
+\- (on windows 11, search 'windows features' in start screen, select 'turn windows features off or on')
+
+example:  
+machine name: bl7-test15  
+printer name: canon lbp251
+
+\- enable sharing on server for the printer. In printer properties, enable 'share this printer', use the same name as printer, for example: canon lbp251
+
+### ON CLIENT PC (you connect from this pc to 'server pc'):
+
+**install lpd printer service, and lpr port monitor:**  
+\- start/run appwiz.cpl  
+\- turn windows features off or on  
+\- print and documents settings  
+\- enable 'lpd print service' (optional)  
+\- enable 'lpr port monitor' (must be installed)  
+\- (on windows 11, search 'windows features' in start screen, select 'turn windows features off or on')
+
+**connect to server printer:**  
+\- control panel/add printer  
+\- add device  
+\- add device manually  
+\- add a local printer or netwok printer  
+\- next  
+\- create new port  
+\- select type of port: LPR port  
+\- (if you don't see 'lpr' port amongst offered, try restarting windows few times or updating windows.)  
+\- add lpr compatible printer:  
+\- name or address of server providing lpd: bl7-test15  
+\- name of printer or print queue of that server: canon lbp251-client (can be anything, really)  
+\- next  
+\- find printer driver .inf file if not already installed.
+
+Note:  
+\- 'enable bidirectional support' should be enabled? untested, probably on by default  
+\- lpr type should also show if you select add port on 'printer server' bottom of 'printers & bluetooth' screen on windows 11  
+\- if you have added 'name:lpr\_port' before, just select it in the previous screen, also windows will complain port already exists.  
+
+
+* * *
+
+### Other way, untested, save the following lines as file fixprinter.reg:
+
+Windows Registry Editor Version 5.00
+
+\[HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows NT\\Printers\\RPC\]  
+"RpcUseNamedPipeProtocol"=dword:00000001  
+"RpcProtocols"=dword:00000007  
+"ForceKerberosForRpc"=dword:00000001
+
+\[HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Control\\Print\]  
+"RpcAuthnLevelPrivacyEnabled"=dword:00000000
+
+* * *
+
+### Microsoft is talking about removing support for lpd protocol from Windows Server OS.
+
+\- You can try using 'standard tcp port' instead of lpr, but there are numerous reports of ip port being replaced with wsd by windows, probably related to 'let windows manage my printer', or windows updating printer driver itself.  
+\- In that case you should remove wsd support from printer, or stop windows updating driver automatically.  
+\- Reg file might get overwritten by group policies
 
 
 
