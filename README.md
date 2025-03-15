@@ -94,7 +94,7 @@ Logo=0
 - if you cannot share printer on windows 10/11 with error message: "windows cannot connect to printer"
 - you can use lpd/lpr printer protocol to share printers.
 
-### ON SERVER PC (machine where canon printer is connected by usb):
+### ON SERVER PC (computer where canon printer is connected by usb):
 
 **install canon printer driver on server:**  
 \- (if ms ipp driver is already installed, select add driver/have disk/navigate to canon driver .inf file  
@@ -103,20 +103,19 @@ Logo=0
 \- in windows 11 you cannot share canon printer using canon driver, client says: cannot connect to printer, when you enter \\\\servername\\printer)
 
 **install lpd printer service, and lpr port monitor:**  
-\- start/run appwiz.cpl  
+\- start/run appwiz.cpl, or type in search in windows 11 settings: 'windows features' in start screen, select 'turn windows features off or on'
 \- turn windows features off or on  
 \- print and documents settings  
 \- enable 'lpd print service'  
 \- enable 'lpr port monitor'  
-\- (on windows 11, search 'windows features' in start screen, select 'turn windows features off or on')
 
 example:  
-machine name: bl7-test15  
+computer name: bl7-test15  
 printer name: canon lbp251
 
 \- enable sharing on server for the printer. In printer properties, enable 'share this printer', use the same name as printer, for example: canon lbp251
 
-### ON CLIENT PC (you connect from this pc to 'server pc'):
+### ON CLIENT PC (you connect from this computer to 'server pc'):
 
 **install lpd printer service, and lpr port monitor:**  
 \- start/run appwiz.cpl  
