@@ -98,7 +98,7 @@ Logo=0
 
 **install canon printer driver on server:**  
 \- (if ms ipp driver is already installed, select add driver/have disk/navigate to canon driver .inf file  
-\- if you get error changing printer driver on server, disable 'share this printer' in share settings, then enable it later, after changing driver.
+\- if you get error changing printer driver on server, disable 'share this printer' in share settings, then enable it later, after changing driver.  
 \- ms ipp drivers have trouble connecting to printer after a while, or it stops working.  
 \- in windows 11 you cannot share canon printer using canon driver, client says: cannot connect to printer, when you enter \\\\servername\\printer)
 
