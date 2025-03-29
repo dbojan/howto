@@ -167,6 +167,26 @@ Windows Registry Editor Version 5.00
 \- In that case you should remove wsd support from printer, or stop windows updating driver automatically.  
 \- Reg file might get overwritten by group policies
 
+## printer prints gibberish on windows 11
 
+aka post, connection, keep alive text, when you replug, or turn printer on. Also, when you click 'cancel' on the printer, it won't print anything for next 5 minutes :D
+
+known issue recall for KB5051987 for Windows 11 shoud fix it, if not:
+
+- on windows 11 24h2, install KB5051987 (if you get error, you might need to install KB5048667, check your windows update, or download and install it manually.)
+- link for KB5051987: https://www.catalog.update.microsoft.com/Search.aspx?q=KB5051987, first file (~600 MB) was sufficient for me.
+- download and install known issue recall for KB5051987 for Windows 11:
+ - https://learn.microsoft.com/en-us/windows/release-health/status-windows-10-22H2#3495msgdesc
+ - add .msi extension to the downloaded file, install it
+ - start gpedit.msc, in 'local computer policy\administrative templates\kb505..092\windows 11\kb505..092' set to disable, restart pc
+- test if it works by replugging printer usb cabe.
+
+There is KB5053657 which is supposed to fix this, but I could not install it on windows 24h2, 'not meant for this os', or something.
+https://www.theregister.com/2025/03/26/microsoft_deborks_usb_printers/
+
+There are also incoming updates that might, or might not solve this issue, as mentioned in this thread, but could not find install files for windows 11 os to test them (only server files are available right now.):
+
+https://blogs.windows.com/windows-insider/2025/03/13/releasing-windows-11-build-22631-5116-to-the-release-preview-channel/  
+https://blogs.windows.com/windows-insider/2025/03/13/releasing-windows-10-build-19045-5674-to-the-release-preview-channel/  
 
 
