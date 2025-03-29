@@ -169,7 +169,7 @@ Windows Registry Editor Version 5.00
 
 ## printer prints gibberish on windows 11
 
-aka post, connection, keep alive text, when you replug, or turn printer on. Also, when you click 'cancel' on the printer, it won't print anything for next 5 minutes :D
+aka post, ipp, connection, keep alive text, when you replug, or turn printer on. Also, when you click 'cancel' on the printer, it won't print anything for next 5 minutes :D
 
 known issue recall for KB5051987 for Windows 11 shoud fix it, if not:
 
