@@ -142,7 +142,7 @@ printer name: canon lbp251
 Note:  
 \- 'enable bidirectional support' should be enabled? untested, probably on by default  
 \- lpr type should also show if you select add port on 'printer server' bottom of 'printers & bluetooth' screen on windows 11  
-\- if you have added 'name:lpr\_port' before, just select it in the previous screen, also windows will complain port already exists.  
+\- if you have added 'name:lpr\_port' before, just select it in the previous screen, also windows will complain port already exists, if you try to create it again.  
 
 
 * * *
