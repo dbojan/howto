@@ -47,7 +47,7 @@ Various HOWTOs
 ## How can I copy files between 2 ftp / webdav sites?
 - Open both sites in winscp program, use copy and paste
 - Or use 'map network drive' or 'add a network location', or create shortcut: explorer.exe ftp://...
-- Tested on MX Linux-xfce, with Thunar file manager, works fine. Use sftp://somesite.com for scp protocol.
+- Tested on MX Linux-xfce, with Thunar file manager, works fine. Use sftp://somesite.com for scp protocol, or use sshfs.
 - Tested on windows, works sort of, only with winscp, but uses temporary folder.
 
 ## How to make Libre Office start faster
