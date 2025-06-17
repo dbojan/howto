@@ -1,4 +1,7 @@
  <h1 id="toc1">How to make portable versions of apps on windows</h1>
+
+ 2025-06-17-1
+ 
  <h2 id="toc2">Note:</h2>
 <p>most of the downloaded installations (setup.exe) can be unpacked using 7-zip program. (7-zip.org)<br>After that find 'name of the program.exe', right click on it, select copy. In windows explorer right click on empty space, select 'paste shortcut'<br>Right click on created shortcut and select properties.</p>
 <p>In the 'Target' field add for example ' -profile myprofile' without quotes. Mind the space before -profile. Dont use spaces in profile name. myprofile, not my profile.</p>
