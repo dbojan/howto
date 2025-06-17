@@ -1,6 +1,8 @@
 # howto
 Various HOWTOs
 
+2025-06-17-1
+
 ## How to change windows password from linux?
  - This is a script to make clearing windows passwords from linux easier.
  - Requires Porteus os, chntpw application and clear_windows_password.sh. Windows partition must not be locked by bitlocker encryption.
