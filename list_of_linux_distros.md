@@ -45,7 +45,7 @@ carefully use gparted, or windows disk manager to partition disk before install.
 
 use ventoy to add multiple iso files to usb (erase usb/choose format to exfat file system type)
 
-### playing games on linxx
+### playing games on linux
 
 install nvidia driver if you have nvidia video card 
 
