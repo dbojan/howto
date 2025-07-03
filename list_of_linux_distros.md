@@ -49,11 +49,13 @@ use ventoy to add multiple iso files to usb (erase usb/choose format to exfat fi
 
 install nvidia driver if you have nvidia video card 
 
-install steam, enable sompatibility in settings.
+install steam, enable compatibility in settings.
 
-for gog/epic use heroic launcher, or add gamesetup.exe shortcut to steam, enable compatibility (proton experimental), install app, add shotcut to game.exe from compat folder.
+for gog/epic use heroic launcher, or add gamesetup.exe shortcut to steam, enable compatibility (proton experimental), install app, add shortcut to game.exe from compat folder.
 
 you can also use legendary for epic games download (untested)
 
+
+todo: spellcheck on pc
 
 
