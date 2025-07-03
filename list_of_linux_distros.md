@@ -5,7 +5,7 @@
 
 tl dr: use linux mint, whichever version you like (cinammon, xfce ...)
 
-For beginners or moving from windows:
+### For beginners or moving from windows:
 
 linux mint: recommened for new users, can be also used for gaming  
 pro: simple to configure, looks like windows  
@@ -29,12 +29,15 @@ pop os: based on debian, but with newer version of apps drivers, untested.
 
 debian: has old software, not user friendly. recommened for servers.
 
-advanced users: 
+### advanced users: 
 
 arch linix: not recommened for beginners
 
 void linux: lean, not recommened for beginners.
 
+### more info: distrowatch.com
+
+things to check: user reviews, based on, linux versin, nvidia version
 
 
 
