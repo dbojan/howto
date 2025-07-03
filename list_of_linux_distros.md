@@ -7,7 +7,7 @@
 
 ### For beginners or moving from windows:
 
-linux mint: recommened for new users, can be also used for gaming  
+linux mint: recommended for new users, can be also used for gaming  
 pro: simple to configure, looks like windows  
 con: does not have the newest apps/drivers.  
 recommended version: xfce for minimal bloat, cinnamon, win like, mate for older desktop like.  
@@ -31,9 +31,9 @@ debian: has old software, not user friendly. recommened for servers.
 
 ### advanced users: 
 
-arch linix: not recommened for beginners
+arch linix: not recommended for beginners
 
-void linux: lean, not recommened for beginners.
+void linux: lean, not recommended for beginners.
 
 ### more info: distrowatch.com
 
@@ -44,6 +44,16 @@ __backup your data first__ to external disk before new install
 carefully use gparted, or windows disk manager to partition disk before install. (shrink windows partition, add empty partition to install linux on)
 
 use ventoy to add multiple iso files to usb (erase usb/choose format to exfat file system type)
+
+### playing games on linxx
+
+install nvidia driver if you have nvidia video card 
+
+install steam, enable sompatibility in settings.
+
+for gog/epic use heroic launcher, or add gamesetup.exe shortcut to steam, enable compatibility (proton experimental), install app, add shotcut to game.exe from compat folder.
+
+you can also use legendary for epic games download (untested)
 
 
 
