@@ -31,7 +31,7 @@ debian: has old software, not user friendly. recommened for servers.
 
 ### advanced users: 
 
-arch linix: not recommended for beginners
+arch linux: not recommended for beginners
 
 void linux: lean, not recommended for beginners.
 
