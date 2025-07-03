@@ -43,6 +43,8 @@ __backup your data first__ to external disk before new install
 
 carefully use gparted, or windows disk manager to partition disk before install. (shrink windows partition, add empty partition to install linux on)
 
+or install on another disk if you have it. choose in bios which to start first on boot.
+
 use ventoy to add multiple iso files to usb (erase usb/choose format to exfat file system type)
 
 ### playing games on linux
