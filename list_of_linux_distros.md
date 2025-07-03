@@ -9,7 +9,7 @@ For beginners or moving from windows:
 
 linux mint: recommened for new users, can be also used for gaming  
 pro: simple to configure, looks like windows  
-con: does not have the newest apps/drivers.
+con: does not have the newest apps/drivers.  
 recommended version: xfce for minimal bloat, cinnamon, win like, mate for older desktop like.  
 (you can download say xfce inside installed distros and switch when loging in, so this is not that important)  
 
