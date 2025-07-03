@@ -3,7 +3,7 @@
 
 2025-07-04-1
 
-tl dr: use linux mint, whichever version you like (cinammon, xfce ...)
+### tl dr: use linux mint, whichever version you like (cinammon, xfce ...)
 
 ### For beginners or moving from windows:
 
