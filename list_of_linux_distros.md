@@ -19,7 +19,7 @@ fedora: new drivers and apps. has weird installer (partition manager)
 
 mx linux: has a lot of configuration tools. does not use systemd, so when you google for stuff, search mx linux, how to ... (older apps and drivers, since it is based on debian distro)
 
-cachy os, manjaro, endeavour os: based on arch linux, but made easy(er) for new users, (have not tested it myself)
+cachy os, manjaro, endeavour os: based on arch linux, but made easier for new users, (have not tested it myself)
 
 nobara os, bazzite: advertised as for gaming, untested.
 
