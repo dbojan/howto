@@ -37,8 +37,13 @@ void linux: lean, not recommened for beginners.
 
 ### more info: distrowatch.com
 
-things to check: user reviews, based on, linux versin, nvidia version
+things to check: user reviews, based on, linux package version, nvidia versio
 
+__backup your data first__ to external disk before new install
+
+carefully use gparted, or windows disk manager to partition disk before install. (shrink windows partition, add empty partition to install linux on)
+
+use ventoy to add multiple iso files to usb (erase usb/choose format to exfat file system type)
 
 
 
